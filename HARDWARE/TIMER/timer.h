@@ -20,8 +20,14 @@
 //新增TIM5_CH1_Cap_Init函数,用于输入捕获
 ////////////////////////////////////////////////////////////////////////////////// 	
 
+extern u32 TIM5_CH1_COUNTER;
+extern u32 TIM5_COUNTER;
+extern u32 TIM3_COUNTER;
+extern u32 TIM3_CUR;
+
 void TIM14_PWM_Init(u32 arr,u32 psc);
 void TIM5_CH1_Cap_Init(u32 arr,u16 psc);
+void TIM3_Int_Init(u16 arr,u16 psc);
 
 #endif
 
