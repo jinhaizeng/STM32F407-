@@ -34,7 +34,8 @@ int main(void)
     TIM_Cmd(TIM5,DISABLE ); 	//关闭定时器5	
     TIM_Cmd(TIM3,DISABLE ); 	//关闭定时器3
     fre = 10*TIM5_COUNTER/(TIM3_COUNTER+TIM3_CUR/1000);
-    printf("%d\r\n",fre);
+    printf("%d\r\n",TIM5_COUNTER);
+     printf("%d\r\n",TIM3_COUNTER);
     TIM5_COUNTER=0;
     TIM3_COUNTER=0;
     TIM_SetCounter(TIM3,0);
